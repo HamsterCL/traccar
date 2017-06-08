@@ -22,7 +22,7 @@ import javax.json.JsonString;
 public class GoogleGeocoder extends JsonGeocoder {
 
     private static String formatUrl(String key, String language) {
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%f,%f";
+        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=%s,%s&sensor=false";
         if (key != null) {
             url += "&key=" + key;
         }
